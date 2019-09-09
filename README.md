@@ -26,9 +26,10 @@
   * [Basic](#basic)
   * [Advanced](#advanced)
   * [TypeScript](#typescript)
-- [Frequent questions](#frequent-questions)
+- [Frequently asked questions](#frequently-asked-questions)
   * [How do I import the same icon from two different styles?](#how-do-i-import-the-same-icon-from-two-different-styles)
   * [I don't think tree-shaking is working; got any advice?](#i-dont-think-tree-shaking-is-working-got-any-advice)
+  * [Why do the icons appear huge and why doesn't the sizing work?](#why-do-the-icons-appear-huge-and-why-doesnt-the-sizing-work)
 - [How to Help](#how-to-help)
 - [Contributors](#contributors)
 - [Releasing this project (only project owners can do this)](#releasing-this-project-only-project-owners-can-do-this)
@@ -519,7 +520,7 @@ They are re-exported from both `@fortawesome/fontawesome-svg-core` and
 make importing more convenient in some cases. Refer to the `index.d.ts` in any
 module to see which types it exports.
 
-## Frequent questions
+## Frequently asked questions
 
 ### How do I import the same icon from two different styles?
 
@@ -537,6 +538,15 @@ library.add(fasFaStroopwafel, farFaStroopwafel)
 
 Check out our [docs here](https://fontawesome.com/how-to-use/with-the-api/other/tree-shaking).
 
+
+### Why do the icons appear huge and why doesn't the sizing work?
+
+You may need to import the css:
+
+```javascript
+import '@fortawesome/fontawesome-svg-core/styles.css';
+```
+
 ## How to Help
 
 Review the following docs before diving in:
@@ -546,11 +556,11 @@ Review the following docs before diving in:
 
 And then:
 
-1.  Check the existing issue and see if you can help!
+1.  Check the [existing issues](https://github.com/FortAwesome/react-fontawesome/issues) and see if you can help!
 
 ## Contributors
 
-The following contributors have either hepled to start this project, have contributed
+The following contributors have either helped start this project, have contributed
 code, are actively maintaining it (including documentation), or in other ways
 being awesome contributors to this project. **We'd like to take a moment to recognize them.**
 
